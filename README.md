@@ -7,7 +7,7 @@ This is a sample containerized application that can be deployed and upgraded wit
 
 The application in question exposes two web interfaces - one that allows votes to be cast and one that shows results. The example below can be used as a guide on how to deploy, upgrade (to a version with modified UI) and tear-down this sample application.
 
-![skopos sample app](skopos-sample-app.png)
+![skopos sample app](architecture1.png)
 
 ### Download and Install Skopos CLI
 
@@ -100,7 +100,7 @@ Click the start button to Deploy the update to the demo app. If you open the res
 Note: replace `localhost` with the actual host or IP address where Skopos runs.
 
 ### Tear down the application
-If you want to remove all containers for our sample application, run the following command or use the "Teardown" option in the UI.
+If you want to remove all containers for our sample application, run the following command or use the `Teardown` option in the UI.
 
 ```
 ~/bin/sks-ctl run -bind localhost:8100 -mode teardown -project skopos-sample -env env.yaml model-v2.yaml
